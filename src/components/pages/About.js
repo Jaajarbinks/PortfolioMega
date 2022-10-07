@@ -1,17 +1,20 @@
-import React from 'react';
+import React from 'react'
 
 export default function About() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+    <div className="Mee">
+      <h1>All About Me</h1>
+      <p className="Me">
+        Welcome to my Portfolio! This is where you will be able to get to know
+        me. I am a Full Stack Developer that is always trying to learn as much
+        as I can. I will be working hard on trying to improve my coding
+        abilities. I will be concentraing the first part of my journey for
+        coding on web development, cyber security, and in my spare time I will
+        be looking into coding some game applications. I have also been
+        interested in creating some mobile and computer applications to make
+        your and my life a little easier. Thank You for your time and interest
+        in me.
       </p>
     </div>
-  );
+  )
 }

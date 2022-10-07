@@ -1,3 +1,138 @@
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;
+.nav {
+  background-color: hsl(106, 88%, 45%);
+}
+
+.Home {
+  background-color: hsla(239, 100%, 50%, 0.925);
+  color: hsl(24, 100%, 50%);
+  display: flex;
+  flex-wrap: wrap;
+  height: 1007px;
+  //   //   justify-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  height: 5rem;
+  width: 100%;
+  // margin: 0px 0px 0px;
+  margin-bottom: 2rem;
+}
+
+.Home1 {
+  font-size: 40px;
+  display: flex;
+  width: 50%;
+  height: 25vh;
+  margin-left: 7rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Mee {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  height: 1007px;
+  width: 100%;
+}
+
+.Me {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 45px;
+  margin-top: 12rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainProject {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: aqua;
+  height: 1007px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: aqua;
+  height: 810px;
+  width: 100%;
+}
+
+.secondProject {
+  display: flex;
+  color: rgb(0, 255, 0);
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 6rem;
+  background-color: blueviolet;
+  height: 300px;
+  width: 275px;
+  // justify-content: center;
+  // align-items: flex-start;
+  border-radius: 20px 80px 20px 80px;
+  border-style: double;
+  border-color: rgb(238, 118, 5);
+  border-width: 0.8rem;
+  box-shadow: 15px 12px 15px rgba(250, 68, 2, 0.918);
+}
+
+h4 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 6rem;
+  height: 2rem;
+}
+
+p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 17px;
+  color: rgb(255, 0, 179);
+  text-decoration: none;
+}
+
+.contacts {
+  background-color: rgb(108, 8, 202);
+  height: 1007px;
+  width: 100%;
+  color: chocolate;
+}
+
+.contactMe {
+  display: flex;
+  margin-left: 20rem;
+  margin-top: 15rem;
+  font-size: 25px;
+  width: 75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactlist {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-left: 37rem;
+}
