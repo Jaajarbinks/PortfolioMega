@@ -3,11 +3,11 @@ import React from 'react'
 export default function Projects() {
   return (
     <div className="mainProject">
-      <h1>Welcome to My Universe</h1>
+      <h1 className="project">Welcome to My Universe</h1>
       <div className="container">
         <div className="secondProject">
           <h4>NuRoute</h4>
-          <p>
+          <p className="nu">
             This was inspired by runners, We wanted to find a way to make a
             random running route so that runners would not get board with their
             runs
@@ -18,7 +18,7 @@ export default function Projects() {
         </div>
         <div className="secondProject">
           <h4>The Feed</h4>
-          <p>
+          <p className="feed">
             We wanted to have a place where people could come and share their
             ideas on what to eat. This is for those that do not have much time
             in their day to plan out meals
@@ -29,14 +29,21 @@ export default function Projects() {
         </div>
         <div className="secondProject">
           <h4>Daily Chatter</h4>
-          <p></p>
-          <a target="blank" href="placeholder">
+          <p className="daily">
+            Talking Cents is a social platform to give your opinion on
+            potentially controversial subjects while voting to gain "Cents".
+          </p>
+          <a
+            className="daily1"
+            target="blank"
+            href="https://daily-discourse.netlify.app/"
+          >
             Daily Chatter
           </a>
         </div>
         <div className="secondProject">
           <h4>Notes Time</h4>
-          <p>
+          <p className="notes">
             Please come and make some notes so you do not forget what you need
           </p>
           <a target="blank" href="https://serene-reef-14168.herokuapp.com/">
@@ -45,7 +52,7 @@ export default function Projects() {
         </div>
         <div className="secondProject">
           <h4>Top Secret</h4>
-          <p>
+          <p className="top">
             Have you sat there and thought about how you where going to keep
             something secret, well no longer come and visit this site and create
             a password so you dont need to think of one
@@ -59,7 +66,7 @@ export default function Projects() {
         </div>
         <div className="secondProject">
           <h4>My Portfolio</h4>
-          <p>
+          <p className="port">
             This is all about me Please come take a look at my accomplishments
           </p>
           <a target="blank" href="placeholder">

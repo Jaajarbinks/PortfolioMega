@@ -1,64 +1,100 @@
 .nav {
-  background-color: hsl(106, 88%, 45%);
+  background-color: hsla(106, 100%, 50%, 0.452);
+}
+
+@media screen and (min-width: 335px) {
+  .Home {
+    width: 100%;
+  }
 }
 
 .Home {
-  background-color: hsla(239, 100%, 50%, 0.925);
-  color: hsl(24, 100%, 50%);
-  display: flex;
-  flex-wrap: wrap;
-  height: 1007px;
-  //   //   justify-content: center;
+  background-color: hsla(239, 95%, 46%, 0.781);
+  width: 100%;
+  height: 96vh;
 }
 
-h1 {
-  font-size: 40px;
-  height: 5rem;
-  width: 100%;
-  // margin: 0px 0px 0px;
-  margin-bottom: 2rem;
+.h1 {
+  margin-left: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .Home1 {
-  font-size: 40px;
-  display: flex;
+  background-color: hsla(138, 100%, 51%, 0.671);
+  justify-content: flex-start;
+  align-items: center;
   width: 50%;
-  height: 25vh;
-  margin-left: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  margin-top: 25%;
+  margin-left: 25%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  height: 10rem;
+}
+
+@media screen and (min-width: 335px) {
+  .Mee {
+    width: 100%;
+  }
 }
 
 .Mee {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
-  height: 1007px;
+  height: 96vh;
   width: 100%;
+  background-color: aquamarine;
+}
+
+.about {
+  margin-left: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .Me {
   display: flex;
+  background-color: rgba(106, 224, 185, 0.616);
+  width: 75%;
   flex-wrap: wrap;
   font-size: 45px;
   margin-top: 12rem;
+  margin-left: 15%;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 335px) {
+  .mainProject {
+    width: 100%;
+  }
+}
+
+.project {
+  display: flex;
+  margin-left: 6rem;
 }
 
 .mainProject {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: aqua;
-  height: 1007px;
+  height: 96vh;
   width: 100%;
+  background-color: aqua;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-right: 20%;
   background-color: aqua;
   height: 810px;
   width: 100%;
@@ -73,8 +109,6 @@ h1 {
   background-color: blueviolet;
   height: 300px;
   width: 275px;
-  // justify-content: center;
-  // align-items: flex-start;
   border-radius: 20px 80px 20px 80px;
   border-style: double;
   border-color: rgb(238, 118, 5);
@@ -85,20 +119,46 @@ h1 {
 h4 {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
   width: 6rem;
   height: 2rem;
 }
 
-p {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 15px;
+.nu {
   margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  justify-content: center;
-  align-items: center;
-  height: 10rem;
+  margin-left: 1rem;
+  width: 90%;
+}
+
+.feed {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  width: 90%;
+}
+
+.notes {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  width: 90%;
+}
+
+.top {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  width: 90%;
+}
+
+.port {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  width: 90%;
+}
+
+.daily {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  width: 90%;
 }
 
 a {
@@ -110,18 +170,28 @@ a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 335px) {
+  .contacts {
+    width: 100%;
+  }
+}
+
 .contacts {
   background-color: rgb(108, 8, 202);
-  height: 1007px;
+  height: 96vh;
   width: 100%;
   color: chocolate;
+}
+
+.contact1 {
+  margin-left: 6rem;
 }
 
 .contactMe {
   display: flex;
   margin-left: 20rem;
-  margin-top: 15rem;
-  font-size: 25px;
+  margin-top: 20%;
+  font-size: 30px;
   width: 75rem;
   justify-content: center;
   align-items: center;
