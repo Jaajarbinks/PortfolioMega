@@ -20,24 +20,23 @@
 }
 
 .Home {
-  background-color: hsla(239, 95%, 46%, 0.781);
-  width: 100vw;
-  height: 100vh;
-}
+    @include flexContainer;
+    flex-direction: column;
+    background-color: hsla(239, 95%, 46%, 0.781);
+    width: 100vw;
+    height: 100vh;
 
-.Home1 {
-  background-color: hsla(138, 100%, 51%, 0.671);
-  justify-content: flex-start;
-  align-items: center;
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 15px;
-  margin-top: 25%;
-  margin-left: 25%;
-  justify-content: center;
-  align-items: center;
-  height: 10rem;
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    .Home1 {
+        background-color: hsla(138, 100%, 51%, 0.671);
+        width: 75vw;
+        flex-wrap: wrap;
+        font-size: 15px;
+        height: 10rem;
+    }
 }
 
 
