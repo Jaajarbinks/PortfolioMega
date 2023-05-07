@@ -69,7 +69,7 @@
     @include flexContainer;
     margin: 0;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     height: 200vh;
     width: 100vw;
     background-color: aqua;
@@ -166,6 +166,7 @@
     }
 
     li {
+        @include flexContainer;
         flex-direction: column;
     }
 }
