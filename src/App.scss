@@ -17,15 +17,9 @@
   background-color: hsla(106, 100%, 50%, 0.452);
 }
 
-@media screen and (min-width: 335px) {
-  .Home {
-    width: 100%;
-  }
-}
-
 .Home {
   background-color: hsla(239, 95%, 46%, 0.781);
-  width: 100%;
+  width: 100vw;
   height: 96vh;
 }
 
@@ -50,11 +44,6 @@
   height: 10rem;
 }
 
-@media screen and (min-width: 335px) {
-  .Mee {
-    width: 100%;
-  }
-}
 
 .Mee {
   display: flex;
@@ -80,12 +69,6 @@
   margin-left: 15%;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (min-width: 335px) {
-  .mainProject {
-    width: 100%;
-  }
 }
 
 .project {
@@ -185,11 +168,6 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 335px) {
-  .contacts {
-    width: 100%;
-  }
-}
 
 .contacts {
   background-color: rgb(108, 8, 202);
