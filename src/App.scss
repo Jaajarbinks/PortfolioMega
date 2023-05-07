@@ -9,6 +9,12 @@
     align-items: center;
 }
 
+@mixin cardBox {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 90%;
+}
+
 .nav {
   background-color: hsla(106, 100%, 50%, 0.452);
 }
@@ -16,7 +22,7 @@
 .Home {
   background-color: hsla(239, 95%, 46%, 0.781);
   width: 100vw;
-  height: 96vh;
+  height: 100vh;
 }
 
 .Home1 {
@@ -59,131 +65,108 @@
     }
 }
 
-    .project {
-        display: flex;
-        margin-left: 6rem;
-    }
 
-    .mainProject {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        height: 96vh;
-        width: 100%;
-        background-color: aqua;
+.mainProject {
+    @include flexContainer;
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 200vh;
+    width: 100vw;
+    background-color: aqua;
+
+    .project {
+        margin: 0;
     }
 
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 35px;
-        margin-right: 20%;
         background-color: aqua;
-        height: 810px;
-        width: 100%;
     }
 
     .secondProject {
-        display: flex;
         color: rgb(0, 255, 0);
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-left: 6rem;
+        //top right bottom left
+        margin: 30px 0px 0px 20px;
         background-color: blueviolet;
-        height: 300px;
-        width: 275px;
+        //@media screen min-width 768
+        //width: 275px;
         border-radius: 20px 80px 20px 80px;
         border-style: double;
         border-color: rgb(238, 118, 5);
         border-width: 0.8rem;
         box-shadow: 15px 12px 15px rgba(250, 68, 2, 0.918);
-    }
 
-    h4 {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 1rem;
-        margin-top: 0.3rem;
-        width: 6rem;
-        height: 2rem;
-    }
+        h4 {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 1rem;
+            margin-top: 0.3rem;
+            width: 6rem;
+            height: 2rem;
+        }
 
-    .nu {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        width: 90%;
-    }
+        .nu {
+            @include cardBox
+        }
 
-    .feed {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        width: 90%;
-    }
+        .feed {
+            @include cardBox
+        }
 
-    .notes {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        width: 90%;
-    }
+        .notes {
+            @include cardBox
+        }
 
-    .top {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        width: 90%;
-    }
+        .top {
+            @include cardBox
+        }
 
-    .port {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        width: 90%;
-    }
+        .port {
+            @include cardBox
+        }
 
-    .daily {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        width: 90%;
-    }
+        .daily {
+            @include cardBox
+        }
 
-    a {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        font-size: 17px;
-        color: rgb(255, 0, 179);
-        text-decoration: none;
+        a {
+            display: flex;
+            justify-content: center;
+            font-size: 17px;
+            color: darkslategrey;
+            text-decoration: none;
+        }
     }
+}
 
 
-    .contacts {
-        background-color: rgb(108, 8, 202);
-        height: 96vh;
-        width: 100%;
-        color: chocolate;
-    }
+
+.contacts {
+    @include flexContainer;
+    flex-direction: column;
+    background-color: rgb(108, 8, 202);
+    height: 100vh;
+    width: 100vw;
+    color: chocolate;
+    margin: 0;
 
     .contact1 {
-        margin-left: 6rem;
+        flex-direction: column;
+        margin-bottom: 15px;
+
     }
 
     .contactMe {
-        display: flex;
-        margin-left: 20rem;
-        margin-top: 20%;
-        font-size: 30px;
-        width: 75rem;
-        justify-content: center;
-        align-items: center;
+        margin-left: 15px;
     }
 
     .contactlist {
-        display: flex;
         flex-direction: column;
-        width: 45rem;
-        justify-content: center;
-        align-items: center;
         list-style-type: none;
-        margin-left: 37rem;
+        
     }
+
+    li {
+        flex-direction: column;
+    }
+}
