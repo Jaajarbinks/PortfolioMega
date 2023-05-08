@@ -3,6 +3,12 @@
 
 }
 
+$breakpoints: ( 
+    "phone": 360px,
+    "tablet": 768px,
+    "desktop": 1024px,
+);
+
 @mixin flexContainer {
     display: flex;
     justify-content: center;
@@ -15,7 +21,31 @@
     width: 90%;
 }
 
+@mixin phone {
+    @media (min-width: map-get($breakpoints, 'phone')) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: map-get($breakpoints, 'tablet')) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: map-get($breakpoints, 'desktop')) {
+        @content;
+    }
+}
+
+@mixin breakpoint($bp: 0) {
+    @media (mmin-width: $bp) {
+        @content;
+    }
+}
 .nav {
+  width: 100vw;
   background-color: hsla(106, 100%, 50%, 0.452);
 }
 
@@ -68,32 +98,40 @@
 .mainProject {
     @include flexContainer;
     margin: 0;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 200vh;
+    height: 100vh;
     width: 100vw;
     background-color: aqua;
 
+    
     .project {
         margin: 0;
     }
 
     .container {
         background-color: aqua;
+        width: 100vw;
     }
 
     .secondProject {
+        display: inline-flex;
+        flex-direction: column;
+        //flex-flow: column;
         color: rgb(0, 255, 0);
         //top right bottom left
         margin: 30px 0px 0px 20px;
         background-color: blueviolet;
         //@media screen min-width 768
-        //width: 275px;
+        width: 25vw;
+       // height: 55vh;
         border-radius: 20px 80px 20px 80px;
         border-style: double;
         border-color: rgb(238, 118, 5);
         border-width: 0.8rem;
         box-shadow: 15px 12px 15px rgba(250, 68, 2, 0.918);
+
+        
 
         h4 {
             display: flex;
