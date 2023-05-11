@@ -23,9 +23,9 @@ export default function Projects() {
             ideas on what to eat. This is for those that do not have much time
             in their day to plan out meals
           </p>
-          <a target="blank" href="https://the-feed-app.herokuapp.com/0">
+          {/*<a target="blank" href="https://the-feed-app.herokuapp.com/0">
             The Feed
-          </a>
+          </a>*/}
         </div>
         <div className="secondProject">
           <h4>Daily Chatter</h4>
@@ -46,9 +46,9 @@ export default function Projects() {
           <p className="notes">
             Please come and make some notes so you do not forget what you need
           </p>
-          <a target="blank" href="https://serene-reef-14168.herokuapp.com/">
+          {/*<a target="blank" href="https://serene-reef-14168.herokuapp.com/">
             Notes Time
-          </a>
+          </a>*/}
         </div>
         <div className="secondProject">
           <h4>Top Secret</h4>

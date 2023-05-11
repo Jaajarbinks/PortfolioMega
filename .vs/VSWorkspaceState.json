@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\pages"
   ],
-  "SelectedNode": "\\C:\\Coding\\PortfolioMega",
+  "SelectedNode": "\\src\\components\\pages\\Projects.js",
   "PreviewInSolutionExplorer": false
 }
